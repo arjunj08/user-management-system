@@ -40,13 +40,22 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // MVC PART
+        // MVC PART - User Management System
         MainView view = new MainView();
         UserModel model = new UserModel();
         new MainController(view, model);
 
-        // PUSH HEAD PART
+        // Demo LinkedList Part
         LinkedList list = new LinkedList();
+        list.pushHead(10);
+        list.pushHead(20);
+        list.pushHead(30);
+        System.out.println("LinkedList Demo: ");
+        list.display();
+
+        System.out.println("✓ Application started successfully!");
+    }
+}
 
         list.pushHead(10);
         list.pushHead(20);
